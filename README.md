@@ -1,3 +1,35 @@
+# Apple Basic Calculator Clone
+
+Estes proyecto es una calculadora interactiva desarrollada en React que permite realizar operaciones matemáticas básicas y ofrece una experiencia de usuario fluida con soporte para clics y entrada desde el teclado
+
+## Características principales
+
+### Operaciones matemáticas básicas:
+- suma
+- resta
+- multiplicación
+- división
+
+### Botones auxiliares:
+
+- C: Borra todo el contenido de la calculadora.
+- CE: Borra el número actual en el display.
+- ←: Elimina el último dígito ingresado.
+
+Control de errores: Manejo de errores como divisiones entre cero o entradas inválidas.
+Audio interactivo: Sonido al presionar botones.
+
+## Uso
+
+Es posible ingresar números y operadores mediante clics o usando el teclado.
+
+- Presiona = o Enter para calcular el resultado.
+- Usa C, CE o ← para limpiar el contenido o ajustar entradas.
+
+La calculadora realiza las operaciones siempre y cuando le sea posible, es decir que no necesariamente se necesita presionar "=" para obtener el resultado de una operación, si la calculadora detecta que existe una operacion válida con el formato (num1, operador, num2) es válida, entonces hara la operación y la mostrara en pantalla y estra lista para seguir realizando más operaciones
+
+<br>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
