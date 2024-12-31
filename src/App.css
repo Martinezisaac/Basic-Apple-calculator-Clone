@@ -1,0 +1,227 @@
+.App {
+  font-family: "sf-pro-display-light", sans-serif;
+  font-size:100px;
+  font-weight: lighter;
+  color: white;
+  text-align: right;
+}
+
+@font-face {
+  font-family: "sf-pro-display-light";
+  src: local("sf-pro-display-light"),
+    url("./assets/fonts/sf-pro-display-light.otf") format("opentype");
+  font-weight: light;
+}
+
+.Calculadora {
+  display: flex;
+  margin: 10rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#operaciones {
+  grid-area: operaciones;
+  min-width: 100%;
+  height: 50px;
+  font-size: 0.40em;
+  overflow: hidden;
+  color: #585858;
+}
+
+#pantalla { 
+  display: block;
+  min-width: 100%;
+  height: 120px;
+  grid-area: pantalla;
+  overflow: hidden;
+ }
+
+.pantalla.small-text {
+  display: block;
+  font-size: 0.90em; /* Tamaño más pequeño cuando hay más de 7 dígitos */
+}
+
+.pantalla.extra-small-text {
+  display: block;
+  font-size: 0.85em; /* Tamaño aún más pequeño cuando hay más de 9 dígitos */
+}
+
+.Calculadora_botones {
+  padding: 3rem;
+  background-color: rgb(0, 0, 0);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.3rem;
+  grid-template-areas: 
+    "operaciones operaciones operaciones operaciones"
+    "pantalla pantalla pantalla pantalla"
+    "btn_eliminarNumero btn_eliminarOperacion btn_eliminarContenido btn_dividir"
+    "btn_7 btn_8 btn_9 btn_multiplicar"
+    "btn_4 btn_5 btn_6 btn_restar"
+    "btn_1 btn_2 btn_3 btn_sumar"
+    "btn_0 btn_0 btn_decimal btn_igual";
+}
+
+#btn_eliminarNumero { grid-area: btn_eliminarNumero; }
+#btn_eliminarContenido { grid-area: btn_eliminarContenido; }
+#btn_eliminarOperacion { grid-area: btn_eliminarOperacion; }
+#btn_0 { 
+  grid-area: btn_0;
+  margin: 0px;
+  padding-left: 2.4rem;
+  width: auto; 
+  display:inline-block;
+  text-align: left;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+#btn_decimal { grid-area: btn_decimal;}
+#btn_igual { grid-area: btn_igual; }
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: none;
+
+  font-family: "sf-pro-display-light", sans-serif;
+  font-size:40px;
+  font-weight: 570;
+  color: white;
+}
+
+#btn_0, #btn_1, #btn_2, #btn_3, #btn_4, #btn_5, #btn_6, #btn_7, #btn_8, #btn_9, #btn_decimal {
+  background-color: #313131; 
+  transition: background-color 0.5s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+#btn_0:hover, #btn_1:hover, #btn_2:hover, #btn_3:hover, #btn_4:hover, 
+#btn_5:hover, #btn_6:hover, #btn_7:hover, #btn_8:hover, #btn_9:hover, 
+#btn_decimal:hover {
+  background-color: #737373; 
+  
+}
+
+#btn_0:active, #btn_1:active, #btn_2:active, #btn_3:active, #btn_4:active, 
+#btn_5:active, #btn_6:active, #btn_7:active, #btn_8:active, #btn_9:active, 
+#btn_decimal:active {
+  background-color: #737373; 
+  transform: scale(0.95);
+}
+
+#btn_sumar, #btn_restar, #btn_multiplicar, #btn_dividir, #btn_igual {
+  background-color: #ff9f0a; 
+  transition: background-color 0.5s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+#btn_sumar:hover, #btn_restar:hover, #btn_multiplicar:hover, #btn_dividir:hover, #btn_igual:hover {
+  background-color: #fbc78d; 
+}
+
+#btn_sumar:active, #btn_restar:active, #btn_multiplicar:active, #btn_dividir:active, #btn_igual:active {
+  background-color: #fbc78d; 
+  transform: scale(0.95);
+}
+
+#btn_eliminarNumero, #btn_eliminarContenido, #btn_eliminarOperacion {
+  background-color: #d1cfcf; 
+  color: black;
+  transition: background-color 0.5s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+#btn_eliminarNumero:hover, #btn_eliminarContenido:hover, #btn_eliminarOperacion:hover {
+  background-color: #eeeeee; 
+}
+
+#btn_eliminarNumero:active, #btn_eliminarContenido:active, #btn_eliminarOperacion:active {
+  background-color: #eeeeee; 
+  transform: scale(0.95);
+}
+
+#btn_dividir {
+  background-image: url('./assets/icons/dividir.svg');
+  background-position: center;
+  background-size: 25%;
+  background-repeat: no-repeat;
+}
+
+#btn_multiplicar {
+  background-image: url('./assets/icons/multiplicar.svg');
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+}
+
+#btn_restar {
+  background-image: url('./assets/icons/restar.svg');
+  background-position: center;
+  background-size: 25%;
+  background-repeat: no-repeat;
+}
+
+#btn_sumar {
+  background-image: url('./assets/icons/sumar.svg');
+  background-position: center;
+  background-size: 25%;
+  background-repeat: no-repeat;
+}
+
+#btn_igual {
+  background-image: url('./assets/icons/igual.svg');
+  background-position: center;
+  background-size: 25%;
+  background-repeat: no-repeat;
+}
+
+/* COSAS DE REACT POR PREDETERMINADO */
+
+/* Para pantallas más pequeñas (Movil) */
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
