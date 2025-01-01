@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'; //Mostrar el resultado en la pantalla de la calcukadora
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import ButtonPressed from './assets/sounds/ButtonPressed.MP3';
 import './App.css'; //Estilo de la calculadora
 import './assets/fonts/sf-pro-display-light.otf'; //Importar la tipografia de apple
