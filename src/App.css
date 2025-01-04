@@ -195,7 +195,6 @@ button {
   background-repeat: no-repeat;
 }
 
-/* Modificaciones para dispositivos móviles (pantallas pequeñas) */
 @media (max-width: 1400px) {
 
   body, html {
@@ -224,7 +223,7 @@ button {
 }
 
 #pantalla {
-  height: 80px; /* Aún más compacto */
+  height: 80px; 
   font-size: 0.60em;
 }
 
@@ -245,7 +244,6 @@ button {
 }
 }
 
-/* Modificaciones para pantallas muy pequeñas (menos de 480px) */
 @media (max-width: 480px) {
 
   body, html {
@@ -259,7 +257,7 @@ button {
   .App {
     background: black;
     background-color: black;
-    height: 100%;
+    height: calc(100vh - env(safe-area-inset-bottom));
     font-size:100px;
   }
 
