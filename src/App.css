@@ -259,7 +259,7 @@ button {
   .App {
     background: black;
     background-color: black;
-    height: 100vh; /* Para cubrir toda la ventana del navegador */
+    height: 100%;
     font-size:100px;
   }
 
