@@ -12,16 +12,16 @@ https://basic-apple-calculator-clone.vercel.app/
 ## Características principales
 
 ### Operaciones matemáticas básicas:
-- Suma
-- Resta
-- Multiplicación
-- División
+- `Suma`
+- `Resta`
+- `Multiplicación`
+- `División`
 
 ### Botones auxiliares:
 
-- C: Borra todo el contenido de la calculadora
-- CE: Borra el número actual en el display
-- ←: Elimina el último dígito ingresado
+- `C` Borra todo el contenido de la calculadora
+- `CE` Borra el número actual en el display
+- `←` Elimina el último dígito ingresado
 
 Control de errores: Manejo de errores como divisiones entre cero o entradas inválidas serán siempre colocador como "Error".
 Audio interactivo: Sonido al presionar botones.
@@ -31,7 +31,7 @@ Audio interactivo: Sonido al presionar botones.
 Es posible ingresar números y operadores mediante clics o usando el teclado.
 
 - Presiona "=" o "Enter" para calcular el resultado.
-- Utiliza "C", "CE" o "←" para limpiar el contenido o ajustar entradas.
+- Utiliza `C`, `CE` o `←` para limpiar el contenido o ajustar entradas.
 
 La calculadora realiza las operaciones siempre y cuando le sea posible, es decir que no necesariamente se necesita presionar "=" para obtener el resultado de una operación, si la calculadora detecta que existe una operacion válida con el formato (num1, operador, num2) es válida, entonces hara la operación y la mostrara en pantalla y estra lista para seguir realizando más operaciones
 
