@@ -2,14 +2,14 @@
 
 Este proyecto es un clon de la calculadora básica del sistema operativo de apple, desarrollada en React, permite realizar operaciones matemáticas básicas y ofrece una experiencia de usuario fluida con soporte para clics y entrada desde el teclado, se realizaron ciertas modificaciones con respecto a la calculadora original, este clon muestra las operaciones del usuario y sus inputs en tiempo real mediante hooks en react. El funcionamiento de la calculadora es el mismo, el manejo de las operaciones se hizo con base a la respuesta de la calculadora de IOS en el como se manejan las operaciones
 
-### Deployment
+### 🚀 Deployment
 https://basic-apple-calculator-clone.vercel.app/
 
 <br>
 
 ![Apple Calculator](src/assets/images/preview/preview-calculadora-operaciones.jpg)
 
-## Características principales
+## 📌 Características principales
 
 ### Operaciones matemáticas básicas:
 - `Suma`
@@ -26,7 +26,7 @@ https://basic-apple-calculator-clone.vercel.app/
 Control de errores: Manejo de errores como divisiones entre cero o entradas inválidas serán siempre colocador como "Error".
 Audio interactivo: Sonido al presionar botones.
 
-## Uso
+## 📖 Uso
 
 Es posible ingresar números y operadores mediante clics o usando el teclado.
 
@@ -35,11 +35,11 @@ Es posible ingresar números y operadores mediante clics o usando el teclado.
 
 La calculadora realiza las operaciones siempre y cuando le sea posible, es decir que no necesariamente se necesita presionar "=" para obtener el resultado de una operación, si la calculadora detecta que existe una operacion válida con el formato (num1, operador, num2) es válida, entonces hara la operación y la mostrara en pantalla y estra lista para seguir realizando más operaciones
 
-## Operaciones en tiempo real
+## ⚙️ Operaciones en tiempo real
 
 Se ha realizado una implementacion de la expresion de las operaciones en tiempo real mediante hooks, es decir que el usuario podrá ver cada botón pulsado en el display, tanto números como operadores, los demas botones realizaran / ejecutaran sus funciones respectivamente y no mostraran una confirmación / input al usuario, más que su función original (por ejemplo, "C" eliminará todas las expresiones, "←" eliminará el último número presionado, etc.). También han sido validados varios casos en caso de que el usuario cometa errores, esto con el fin de corregir la expresion y que el usuario pueda seguir realizando operaciones.
 
-## Ejemplos de casos de errores del usuario
+## 🔍 Ejemplos de casos de errores del usuario
 - ¿Que pasaría si el usuario presiona un operador y después presiona el boton ""? La operacion no puede realizarse porque no hay un número después del operador
 - Solución: Eliminar el operador de la expresión, conservando el primer número y esperar la respeusta del usuario para que presione un operador y un nuevo número
 - ¿Que pasaría si el usuario presiona "=" sin antes presionar un operador?
