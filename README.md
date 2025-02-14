@@ -2,13 +2,6 @@
 
 Este proyecto es un clon de la calculadora básica del sistema operativo de apple, desarrollada en React, permite realizar operaciones matemáticas básicas y ofrece una experiencia de usuario fluida con soporte para clics y entrada desde el teclado, se realizaron ciertas modificaciones con respecto a la calculadora original, este clon muestra las operaciones del usuario y sus inputs en tiempo real mediante hooks en react. El funcionamiento de la calculadora es el mismo, el manejo de las operaciones se hizo con base a la respuesta de la calculadora de IOS en el como se manejan las operaciones
 
-### 🚀 Deployment
-https://basic-apple-calculator-clone.vercel.app/
-
-<br>
-
-![Apple Calculator](src/assets/images/preview/preview-calculadora-operaciones.jpg)
-
 ## 📌 Características principales
 
 ### Operaciones matemáticas básicas:
@@ -52,6 +45,13 @@ Se ha realizado una implementacion de la expresion de las operaciones en tiempo 
 Sí existen casos que no pueden ser validados o resueltos, en su caso, la divisón entre 0 es un error que arroja como resultado "Error" en este proyecto, la lógica para responder a dicho problema consiste en reiniciar el display y la expresion al presionar cualquier botón, si por ejemplo el usuario intenta realizar la operacion: "Error + " el display se reinicia dejandolo en 0 para realizar una nueva operación. 
 
 <br>
+
+### 🚀 Deployment
+https://basic-apple-calculator-clone.vercel.app/
+
+<br>
+
+![Apple Calculator](src/assets/images/preview/preview-calculadora-operaciones.jpg)
 
 # Getting Started with Create React App
 
